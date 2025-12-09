@@ -1,0 +1,91 @@
+url-shortener-sb/
+│
+├── .gitattributes
+├── .gitignore
+├── HELP.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+│
+├── .idea/
+│   ├── .gitignore
+│   ├── compiler.xml
+│   ├── copilot.data.migration.agent.xml
+│   ├── copilot.data.migration.ask.xml
+│   ├── copilot.data.migration.ask2agent.xml
+│   ├── copilot.data.migration.edit.xml
+│   ├── encodings.xml
+│   ├── jarRepositories.xml
+│   ├── misc.xml
+│   └── workspace.xml
+│
+├── .mvn/
+│   └── wrapper/
+│       └── maven-wrapper.properties
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/url/shortener/
+│   │   │       │
+│   │   │       ├── UrlShortenerSbApplication.java
+│   │   │       │
+│   │   │       ├── controller/
+│   │   │       │   ├── AuthController.java
+│   │   │       │   ├── RedirectController.java
+│   │   │       │   └── UrlMappingController.java
+│   │   │       │
+│   │   │       ├── dtos/
+│   │   │       │   ├── ClickEventDTO.java
+│   │   │       │   ├── LoginRequest.java
+│   │   │       │   ├── RegisterRequest.java
+│   │   │       │   └── UrlMappingDTO.java
+│   │   │       │
+│   │   │       ├── models/
+│   │   │       │   ├── ClickEvent.java
+│   │   │       │   ├── UrlMapping.java
+│   │   │       │   └── User.java
+│   │   │       │
+│   │   │       ├── repository/
+│   │   │       │   ├── ClickEventRepository.java
+│   │   │       │   ├── UrlMappingRepository.java
+│   │   │       │   └── UserRepository.java
+│   │   │       │
+│   │   │       ├── security/
+│   │   │       │   ├── WebConfig.java
+│   │   │       │   ├── WebSecurityConfig.java
+│   │   │       │   └── jwt/
+│   │   │       │       ├── JwtAuthenticationFilter.java
+│   │   │       │       ├── JwtAuthenticationResponse.java
+│   │   │       │       └── JwtUtils.java
+│   │   │       │
+│   │   │       └── service/
+│   │   │           ├── UrlMappingService.java
+│   │   │           ├── UserDetailsImpl.java
+│   │   │           ├── UserDetailsServiceImpl.java
+│   │   │           └── UserService.java
+│   │   │
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       ├── static/
+│   │       └── templates/
+│   │
+│   └── test/
+│       └── java/com/url/shortener/
+│           └── UrlShortenerSbApplicationTests.java
+│
+└── target/
+    ├── classes/
+    │   ├── application.properties
+    │   └── com/url/shortener/
+    │       ├── UrlShortenerSbApplication.class
+    │       ├── controller/
+    │       ├── dtos/
+    │       ├── models/
+    │       ├── repository/
+    │       ├── security/
+    │       │   └── jwt/
+    │       └── service/
+    │
+    └── generated-sources/
+        └── annotations/
