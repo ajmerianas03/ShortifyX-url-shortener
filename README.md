@@ -1,8 +1,13 @@
-
 -----
 
-````markdown
 # 🔗 Full Stack URL Shortener
+
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/spring%20boot-%236DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
 
 > **🚧 PROJECT STATUS: ONGOING / WORK IN PROGRESS 🚧**
 >
@@ -19,7 +24,7 @@ This is a robust, full-stack URL shortening application designed to provide user
 
 ### ✅ Completed & Functional
 * **User Authentication:** Secure Registration and Login using **JWT (JSON Web Tokens)**.
-* **URL Shortening:** logic to map long URLs to unique short strings.
+* **URL Shortening:** Logic to map long URLs to unique short strings.
 * **Redirection:** Instant redirection from short URLs to original URLs (HTTP 302).
 * **User Dashboard:** View a list of all shortened URLs managed by the logged-in user.
 * **Analytics:**
@@ -39,9 +44,9 @@ This is a robust, full-stack URL shortening application designed to provide user
 
 ### Backend (Java / Spring Boot)
 * **Language:** Java 17
-* **Framework:** Spring Boot 3.x
+* **Framework:** Spring Boot 3.5.7
 * **Security:** Spring Security, JWT (jjwt 0.12.6)
-* **Database:** MySQL (Production), H2 (Optional for Dev)
+* **Database:** MySQL
 * **ORM:** Spring Data JPA (Hibernate)
 * **Utilities:** Lombok
 
@@ -67,7 +72,7 @@ root/
     ├── src/components...   # Dashboard, Auth, Landing Page
     ├── src/api...          # Axios setup
     └── package.json        # Node dependencies
-````
+```
 
 ## ⚙️ Getting Started
 
@@ -75,22 +80,23 @@ root/
 
   * **Java 17** or higher
   * **Node.js** (v18+ recommended)
-  * **MySQL** Database
+  * **MySQL** Database installed and running
 
 ### 1\. Backend Setup (`url-shortener-sb`)
 
-1.  Navigate to the backend folder:
+1.  **Database Setup:** Create a database in MySQL named `urlshortenerdb` (or whatever you prefer).
+2.  Navigate to the backend folder:
     ```bash
     cd url-shortener-sb
     ```
-2.  Configure your database in `src/main/resources/application.properties`:
+3.  Configure your database in `src/main/resources/application.properties`:
     ```properties
     spring.datasource.url=jdbc:mysql://localhost:3306/urlshortenerdb
-    spring.datasource.username=your_username
-    spring.datasource.password=your_password
+    spring.datasource.username=your_mysql_username
+    spring.datasource.password=your_mysql_password
     spring.jpa.hibernate.ddl-auto=update
     ```
-3.  Run the application:
+4.  Run the application:
     ```bash
     ./mvnw spring-boot:run
     ```
@@ -110,7 +116,7 @@ root/
     ```bash
     npm run dev
     ```
-    The application will run on `http://localhost:5173` (or similar).
+    The application will run on `http://localhost:5173`.
 
 ## 🔌 API Endpoints
 
@@ -136,10 +142,5 @@ Since this project is **ongoing**, suggestions and pull requests are welcome\!
 
 -----
 
-*Created by ANAS AJMERI*
+*Created by **ANAS AJMERI***
 
-```
-
----
-
-```
